@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.piilota {
+    display: none;
+}
+
+body {
+    background-color: #1d1c26;
+}
+
+p {
+    color: #b7b7b7;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+nav h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 60px;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+    margin-top: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #7c7f84;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+}
+
+nav ul li a:hover{
+    color: #bf4631;
+}
+
+.asd .text {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.text2 {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+.asd img {
+    display: block;
+    margin: 100px auto 0 auto;
+
+}
+
+.asd h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.asd img {
+    width: 250px;
+}
+
+#active {
+    background-color: #bf4631;
+    padding: 3px;
+    border-radius: 10px;
+    color: white;
+}
+
+main .box {
+    text-align: center;   
+}
+
+.historia {
+    background-color: #17161e;
+    margin-top: 10%;
+    padding: 100px;
+
+}
+
+.leveä {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#distrolista {
+    margin: 1% 0 1% 0;
+}
+
+#distrolista li {
+    margin: 0 3px 0 3px;
+}
+
+#distrolista li a {
+    color: #b7b7b7;
+    font-size: 1.5em;
+}
+
+.distro {
+    float: left;
+    margin: 1% 0 0 0;
+    background-color: #17161e;
+    width: 100%;
+}
+
+.distro #nimi {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 10% 0 10%;
+}
+
+.distro #kuvaus {
+    font-size: 1em;
+    margin: 0 10% 0 10%;
+}
+
+#distro-header {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+#distro-header ul li {
+    display: inline;
+}
+
+
+#distro-header h1 {
+    font-weight: 500;
+    font-size: 2em;
+}
+
+#nappi {
+    position: fixed;
+    margin: 0 5% 0 93%;
+    color: white;
+    background-color: #bf4631;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 3px 3px 5px black;
+    border: 1px solid #666768;
+}
+
+.artikkelit {
+    margin-top: 5%;
+}
+
+.artikkeli {
+    border: 2px solid #666768;
+    margin: 0% 15% 3% 15%;
+    background-color: #17161e;
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px #0f0e14;
+}
+
+.artikkeli img {
+    margin-top: 0;
+}
+
+.artikkeliteksti {
+
+    display: inline-block;
+    padding: 5px;
+    bottom: 50px;
+    width: 50%;
+}
+
+.artikkeliteksti p {
+    padding: 5px;
+    margin: 2%;
+}
+
+.artikkeli img {
+    display: inline-block;
+    padding: 5px;
+}
+
+#artikkeli-navigaatio {
+    display: block;
+    float: left;
+    border: 2px solid #666768;
+    background-color: #17161e;
+    border-radius: 2px; 
+    border-left: none;
+    box-shadow: 3px 3px 10px #0f0e14;
+
+}
+
+#artikkeli-navigaatio ul {
+    display: block;
+}
+
+#artikkeli-navigaatio ul li {
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    nav ul li {
+        display: block;
+        float: left;
+    }
+
+    nav ul {
+        border-bottom: black;
+    }
+
+    nav ul, nav {
+        background-color: #131219;
+        margin: 0;
+    }
+
+    .historia {
+        padding: 0;
+        margin: 0
+    }
+
+    .text {
+        width: 100%;
+    }
+    .text2 {
+        width: 100%;
+
+    }
+    
+    .artikkeli {
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
+
+    .box {
+        text-align: left;
+    }
+
+    .artikkeliteksti {
+        width: 100%;
+    }
+
+    .artikkeli {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    #artikkeli-navigaatio {
+        display: none;
+    }
+
+    #nappi {
+        display: none;
+    }
+}
+

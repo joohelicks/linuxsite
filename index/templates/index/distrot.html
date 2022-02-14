@@ -1,0 +1,20 @@
+{% extends 'index/base.html' %}
+
+{% block content %}
+    <div id="distro-header">
+        <h1>Suosittuja linux-jakeluita</h1>
+        <ul id="distrolista">
+            {% for distro in distrot %}
+                <li><a href="#{{ distro.nimi }}"> {{ distro.nimi }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% for distro in distrot %}
+    <div class="distro">
+        <img  id="{{ distro.nimi }}" src="{{ distro.kuva.url }}" style="width: 200px">
+        <h3 id="nimi">{{ distro.nimi }}</h3> <br>
+        <p id="kuvaus">{{ distro.kuvaus }}</p>
+    </div>
+    {% endfor %}
+    
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'index/base.html' %}
+
+{% block content %}
+
+    <nav id="artikkeli-navigaatio">
+    <ul>
+        {% for artikkeli in artikkelit %}
+        <li><a href="#{{ artikkeli.otsikko }}">{{ artikkeli.otsikko }}</a></li>
+        {% endfor %}
+    </ul>
+    </nav>
+
+    <!-- <h2>Jakelut</h2>
+    <p>Linux-käyttöjärjestelmä on aviointa lähdekoodia joten kuka vaan voi ladata linuxin ja muokata siitä sellaisen kuin haluaa.
+        Nämä eri "muokkaukset" linuxista ovat jakeluita. Tunnnettuja jakeluita voit katsoa <a href="{% url 'index:distrot' %}">täältä</a>.
+        Eri jakelut tulevat eri työpöytäympäristöillä ja muilla eri ohjelmistoilla. Jotkut jakelut ovat keskittyneet tiettyyn asiaan esimeriksi
+        turvallisuuteen tai ohjelmistokehitykseen.
+    </p> -->
+    <div class="artikkelit">
+    {% for artikkeli in artikkelit %}
+        <div class="artikkeli">
+
+            {% if artikkeli.kuva %}
+                <img src="{{ artikkeli.kuva.url }}">
+            {% endif %}
+            <div class="artikkeliteksti">
+            <h2 id="{{ artikkeli.otsikko }}"> {{ artikkeli.otsikko }}</h2>
+            <p> {{ artikkeli.teksti }} </p>
+            </div>
+
+        </div>
+    {% endfor%}
+    </div>
+
+{% endblock %}
